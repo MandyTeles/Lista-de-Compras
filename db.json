@@ -1,0 +1,10 @@
+{
+  "compras": [
+    {
+      "id": "9d6e",
+      "item": "Ovos",
+      "categoria": "Alimento",
+      "concluido": false
+    }
+  ]
+}

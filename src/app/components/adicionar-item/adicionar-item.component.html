@@ -1,0 +1,25 @@
+
+@if (mostrarAddItem) {
+    <app-button text="Fechar" color="red" (bntClick)="AlteraVisu(false)"></app-button>
+} @else {
+    <app-button text="Adicionar Item" color="purple" (bntClick)="AlteraVisu(true)"></app-button>
+}
+
+<form (ngSubmit)="onSubmit()" *ngIf="mostrarAddItem" class="add-form">
+    <div>
+        <label for="text">Item para compra</label>
+        <input type="text" name="text" class="form-control" placeholder="Adicione um item para comprar" id="text" [(ngModel)]="item" >
+    </div>
+
+    <div class="mb-4">
+        <label for="Categoria">Categoria</label>
+        <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria">
+            <option value="">Selecione uma categoria</option>
+            <option value="Alimento">Alimento</option>
+            <option value="Limpeza">Limpeza</option>
+            <option value="Higiene Pessoal">Higiene Pessoal</option>
+        </select>
+
+    </div>
+    <input type="submit" value="Salvar item" class="btn btn-block mb-4">
+</form>

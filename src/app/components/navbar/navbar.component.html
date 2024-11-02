@@ -1,0 +1,12 @@
+<nav>
+    <!--<ul>
+        <li><a routerLink="/profile" class="profile">Profile</a></li>
+    </ul>-->
+    <div>
+        @if(auth.isAuthenticated$ | async){
+            <button class="login" (click)="auth.logout()">Log out</button>
+        } @else {
+            <button class="login" (click)="auth.loginWithRedirect()" >Log in</button>
+        }
+    </div>
+</nav>

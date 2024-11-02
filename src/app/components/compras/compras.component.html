@@ -1,0 +1,3 @@
+<app-adicionar-item (onaddItem)="AddItem($event)"></app-adicionar-item>
+<app-compra-item *ngFor="let item of compras" [compras] = 'item' (onDeleteItem)="deleteItem($event)"
+(onToggleconcluido)="toggleConcluido($event)"></app-compra-item>

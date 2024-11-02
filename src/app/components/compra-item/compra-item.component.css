@@ -1,0 +1,20 @@
+.item-compra{
+    background: #f4f4f4;
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.item-compra.reminder{
+    border-left: 8px solid green;
+}
+
+.item-compra h3{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.icon{
+    color: red;
+}

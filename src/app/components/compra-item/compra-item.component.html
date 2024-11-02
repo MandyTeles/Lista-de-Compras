@@ -1,0 +1,6 @@
+<div class="item-compra" (dblclick)="onToggle(compras)" [ngClass]="{reminder:compras.concluido}" >
+    <h3>{{compras.item}}
+        <fa-icon [icon]="faTimes" class="icon" (click)="onDelete(compras)"></fa-icon>
+    </h3>
+    <p>{{compras.categoria}}</p>
+</div>

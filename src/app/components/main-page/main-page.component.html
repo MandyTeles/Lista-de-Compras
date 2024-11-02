@@ -1,0 +1,17 @@
+@if (auth.isAuthenticated$|async) {
+    <nav>
+        <h1 class="navtit">Organize suas compras da melhor forma</h1>
+      </nav>
+      <div class="container">
+        <app-header></app-header>
+        <app-compras></app-compras>
+      </div>
+} @else {
+  
+  <div class="main-content">
+    
+    <h2>Faça o Login para começar a anotar suas compras!</h2>
+    <h4>Organize sua lista da melhor forma</h4>
+
+  </div>
+}
